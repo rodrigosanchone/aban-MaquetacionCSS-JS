@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>AbanNicoya</title>
+</head>
+
+<body>
+    <header>
+        <div class="center-header">
+            <div class="barra">
+                <a href="/"><h1>Aban Nicoya</h1></a>
+                <div class="movil-menu">
+                   
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <line x1="4" y1="6" x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                      </svg>
+                </div>
+            </div>
+
+         
+                <nav class="navegacion">
+                    <a href="#aboutUs">Sobre Nosotros</a>
+                    <a href="#services">Servicios</a>
+                    <a href="#notice">Noticia</a>
+                    <a href="#contact">Contactos</a>
+                </nav>
+          
+        </div>
+    </header>
+
+    <div class="slider">
+        
+    </div>
+    <div class="clearfix" id="aboutUs">
+    </div>
+       
+    <main >
+        <h2>Sobre nosotros</h2>
+        <div class="aboutUs"  >
+            
+            <div class="img">
+                <img src="img/perro1.webp" alt="">
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit mauris sed augue suscipit, eget fermentum justo ultrices. Nam mollis euismod sapien non semper. Donec dignissim consectetur magna. Ut imperdiet sapien non odio accumsan, ac bibendum turpis lacinia. Proin sit amet elit sit amet ex aliquam suscipit eleifend a ligula. Donec egestas elementum est, sed tempus purus luctus at. Mauris ultrices dapibus tortor ut pellentesque. Pellentesque id pretium purus, nec faucibus eros.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit mauris sed augue suscipit, eget fermentum justo ultrices. Nam mollis euismod sapien non semper. Donec dignissim consectetur magna. Ut imperdiet sapien non odio accumsan, ac bibendum turpis lacinia. Proin sit amet elit sit amet ex aliquam suscipit eleifend a ligula. Donec egestas elementum est, sed tempus purus luctus at. Mauris ultrices dapibus tortor ut pellentesque. Pellentesque id pretium purus, nec faucibus eros.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit mauris sed augue suscipit, eget fermentum justo ultrices. Nam mollis euismod sapien non semper. Donec dignissim consectetur magna. Ut imperdiet sapien non odio accumsan, ac bibendum turpis lacinia. Proin sit amet elit sit amet ex aliquam suscipit eleifend a ligula. Donec egestas elementum est, sed tempus purus luctus at. Mauris ultrices dapibus tortor ut pellentesque. Pellentesque id pretium purus, nec faucibus eros.
+                </p>
+            </div>
+        </div>
+    </main>
+        
+    <div class="clearfix" id="services">
+    </div>
+
+         <section class="center">
+            <h2>Servicios</h2>
+            <div class="services" >
+                <div class="service" >
+                    <div class="tarjeta" *ngFor="let service of services,  let i=index">
+                     <img src="img/perro3.webp" alt="service.titulo" loading="lazy"/>
+                        <h3>Campañas de castración comunitarias</h3>   
+                    </div>
+                  
+                </div>
+                <div class="service" >
+                    <div class="tarjeta" *ngFor="let service of services,  let i=index">
+                     <img src="img/perro3.webp" alt="service.titulo" loading="lazy"/>
+                    
+                        <h3>Servicio de castración</h3>   
+                    </div>
+                  
+                </div>
+                <div class="service" >
+                    <div class="tarjeta" *ngFor="let service of services,  let i=index">
+                     <img src="img/perro3.webp" alt="service.titulo" loading="lazy"/>
+                   
+                        <h3>Castración de gatitos</h3>   
+                    </div>
+                  
+                </div>
+              <!--   usar esto para angular -->
+            <!--     <div class="tarjeta" *ngFor="let service of services,  let i=index">
+                 <img [src]="service.img" alt="service.titulo" loading="lazy">
+                    <h3>{{service.titulo}}</h3>
+                    <div class="infotarjeta">
+                        <p>{{service.info}}</p>
+                    </div>
+                   
+                </div> -->
+              
+         
+            </div>
+         </section>
+
+         <div class="clearfix" id="notice">
+        </div>
+
+           <section class="center notice"  id="">
+            <h2>Avisos</h2>
+             <div class="board">
+                 <h2>Proximas castraciones:</h2>
+                 <div class="info">
+                    <div class="date">
+                        <p>Fecha:</p>
+                        <p class="intro">22/2/2022</p>
+                    </div>
+                    <div class="place">
+                        <p>Lugar:</p>
+                       <p class="intro">Puntarenas</p>
+                    </div>
+                    
+                 </div>
+                 <div class="info">
+                    <div class="date">
+                        <p>Fecha:</p>
+                        <p class="intro">22/2/2022</p>
+                    </div>
+                    <div class="place">
+                        <p>Lugar:</p>
+                       <p class="intro">Puntarenas</p>
+                    </div>
+                    
+                 </div>
+             </div>
+            
+         </section>
+
+         <div class="clearfix" id="contact">
+        </div>
+
+        <div class="center contact">
+            <h2>Nos encantaría recibir tu mensaje</h2>
+            <form class="formulario" [formGroup]="form" method="Post" action="/codes/send.php" >
+              <fieldset>
+                <legend>Datos personales</legend>
+                <div>
+          
+                  <label for="nombre">Nombre</label>
+                  <input type="text" placeholder="Ingrese su nombre" formControlName="nombre" id="nombre" [formControl]="nombre" required name="nombre">
+                  <div [ngClass]="!submitted? 'hidden' : 'visible'" class="alerta">
+                  <!--   <span class="alerta">{{responseMessage}}</span> -->
+                  </div>
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input type="email" placeholder="Tu email" id="email" [formControl]="email" required name="email">
+                  <div [ngClass]="!submitted? 'hidden' : 'visible'" class="alerta">
+                   <!--  <span class="alerta">{{responseMessage2}}</span> -->
+                  </div>
+                </div>
+                <div>
+                  <label for="telefono">Teléfono</label>
+                  <input type="phone" placeholder="Tu Teléfono" id="" [formControl]="telefono" required name="telefono">
+                  <div [ngClass]="!submitted? 'hidden' : 'visible'" class="alerta">
+                  <!--   <span class="alerta">{{responseMessage3}}</span> -->
+                  </div>
+                </div>
+          
+                <div class="mensaje">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" [formControl]="mensaje" required name="mensaje"></textarea>
+                  <div [ngClass]="!submitted? 'hidden' : 'visible'" class="alerta">
+                   <!--  <span class="alerta">{{responseMessage4}}</span> -->
+                  </div>
+                </div>
+                <!--Aqui va el recaptcha-->
+                <div class="mensaje">
+                 
+                    <form>
+                      <ngx-invisible-recaptcha #captchaElem [siteKey]="siteKey">
+                      </ngx-invisible-recaptcha>
+                    </form>
+                  
+                </div>
+                <!--Aqui va el recaptcha-->
+                <div class="">
+                  <input [disabled]="isLoading" type="submit" value="Enviar" class="botonAzul">
+                </div>
+                </fieldset>
+            </form>
+        </div>
+
+    
+         
+
+    <footer class="footer">
+        <div class="center-footer">
+
+        
+             <div class="redes-sociales">
+                <a href="https://www.facebook.com/104797422062409/posts/130907986118019/"  target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                      </svg>
+                </a>
+                <a href="https://www.instagram.com/rodri_sancho_2018" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                      </svg>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=50660331480." target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                      </svg>
+                </a>
+             </div>
+          </div>
+          <p class="copyright">
+            Todos los derechos reservados 2022 &copy;
+         </p>
+    </footer>
+</body>
+  <script src="codes/movilmenu.js"></script>
+</html>
